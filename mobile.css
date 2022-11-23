@@ -1,30 +1,44 @@
 @media screen and (max-width: 900px) {
 
+    * {
+        padding-right: 0px;
+        margin-right: 0px;
+    }
+
+    /* html {
+        max-width: 100vw;
+    } */
     body {
         font-family: Arial, sans-serif;
         font-weight: 500;
         color: var(--secondary-text-color);
         width: 100vw;
+        height: max-content;
     }
 
     .hero-section {
+
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
         height: max-content;
         text-align: center;
-        height: 80vh;
-        width: 100vw;
-        margin: 0 auto;
+        width: 100%;
+        /* padding: 0 auto; */
         color: aliceblue;
     }
 
 
     .hero-left-side {
+        /* width: 70%; */
+        margin-inline: auto;
         padding: 0px;
+        padding-bottom: 70px;
         background: none;
-        width: 100vw;
         height: max-content;
     }
 
-    .hero-left-side nav {}
+    /* .hero-left-side nav {} */
 
     .hero-content {
         margin-top: 60px;
@@ -35,7 +49,7 @@
         text-align: center;
     }
 
-    .left-side-down i {
+    .hero-left-side .left-side-down {
         color: aliceblue;
     }
 
@@ -43,23 +57,30 @@
         color: aliceblue;
     }
 
+    .hero-left-side .down-button {
+        margin-bottom: 0px;
+        border: 3px solid var(--main-color);
+    }
+
     .hero-head {
+        font-size: 12px;
         color: aliceblue;
     }
 
     .hero-text {
-        font-size: 42px;
-        line-height: 50px;
+        font-size: 36px;
+        line-height: 40px;
         margin-bottom: 0px;
     }
 
     .hero-sub-text {
+        font-size: 14px;
         margin-bottom: 0px;
     }
 
     .company {
-        padding-left: 40px;
-        padding-top: 40px;
+        /* padding-left: 40px;
+        padding-top: 40px; */
     }
 
     .hero-left-side .company {
@@ -76,20 +97,20 @@
     }
 
     .hero-right-side {
-        /* background: azure; */
-        height: 90vh;
-        width: 100vw;
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
         position: absolute;
         top: 0;
+        left: 0;
         right: 0;
+        bottom: 0;
+        height: 90vh;
+        width: 100%;
+        background-size: auto;
+        background-position: top center;
+        background-repeat: no-repeat;
         z-index: -100;
-        /* display: none; */
     }
 
-    .hero-right-side .message {
+    .hero-right-side .message-container {
         display: none;
     }
 
@@ -105,9 +126,8 @@
         font-weight: 300;
         line-height: 50px;
         margin-bottom: 30px;
-        width: 500px;
     }
-    
+
     .about-list .about p {
         font-size: 16px;
         width: 300px;
@@ -119,11 +139,24 @@
         flex-direction: column;
     }
 
+
+    /* THIRD SECTION */
+
+    
     .latest-trends .right-side {
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
+
+    .latest-trends p {
+        width: 300px;
+    }
+
+
+
+
+
 
     .carousel {
         position: relative;
@@ -197,15 +230,24 @@
 
 
     footer {
-        width: 100%;
+        min-height: max-content;
+        display: flex;
         height: max-content;
         padding: 30px 0;
+        justify-content: center;
     }
 
     .footer-navs {
+        width: 300px;
         display: flex;
         flex-direction: column;
         gap: 30px;
+    }
+
+
+    .footer-sections {
+        padding-left: 5vw;
+        padding-right: 0;
     }
 
     .footer-section {
@@ -232,6 +274,24 @@
         font-size: 20px;
     }
 
+    .footer-socials li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border: 3px solid var(--text-color);
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+
+    .footer-socials li i {
+        font-size: 20px;
+    }
+
     .footer-legals {
         display: flex;
         flex-direction: column-reverse;
@@ -246,4 +306,5 @@
     }
 
     /* FOOTER STOP */
+
 }
