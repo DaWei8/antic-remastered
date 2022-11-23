@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="./fontawesome/css/all.css">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./mobile.css">
-
     <title>Antic Remastered</title>
+    
 </head>
 
 <body>
@@ -19,16 +19,17 @@
         <!-- FIRST SECTION -->
         <div class="hero-section">
             <div class="hero-left-side">
-                <div class="hamburger" onclick="">
-
+                <div class="hamburger" onclick=activate() >
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
                 </div>
-                <nav>
+                <nav class="nav-container">
                     <div class="company">antic</div>
-                    <ul>
-                        <li>Products</li>
-                        <li>Rooms</li>
-                        <li>Services</li>
-                        <li>Inspiration</li>
+                    <ul class="hide-nav">
+                        <li class="nav-link">Products</li>
+                        <li class="nav-link">Rooms</li>
+                        <li class="nav-link">Services</li>
+                        <li class="nav-link">Inspiration</li>
                     </ul>
                 </nav>
                 <div class="hero-content">
@@ -55,10 +56,10 @@
             <div class="hero-right-side">
                 <div class="message-container">
                     <div class="message">
-                    <i class="fa-solid fa-comments"></i>
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
                 </div>
-                </div>
-                
+
             </div>
 
         </div>
@@ -219,7 +220,7 @@
                         </div>
                         <img src="./images/footer.png" alt="footer image">
                         <p>We’re taking positive steps to reduce our impact on the planet. For us, that means retailing
-                        responsibly.</p>
+                            responsibly.</p>
                         <p class="clickable">Learn more <i class="fa-solid fa-chevron-right"></i></p>
                     </div>
                 </div>
@@ -248,7 +249,7 @@
     </div>
 
 
-
+    <script src="./main.js"></script>
 </body>
 
 </html>

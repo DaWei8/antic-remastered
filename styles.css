@@ -56,10 +56,10 @@ body {
     padding-left: 10vw;
 }
 
-.hero-left-side nav {
+.hero-left-side .nav-container {
     margin-top: 60px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 30px;
     align-items: baseline;
 }
@@ -71,7 +71,7 @@ body {
     color: var(--text-color);
 }
 
-.hero-left-side ul {
+.hide-nav {
     font-family: Arial;
     font-size: 13px;
     /* float: right;     */
@@ -80,7 +80,7 @@ body {
     gap: 10px;
 }
 
-.hero-left-side li {
+.hero-left-side .nav-link {
     padding-right: 10px;
 }
 
