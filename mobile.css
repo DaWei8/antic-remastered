@@ -30,18 +30,22 @@
 
 
     .hero-left-side {
-        /* width: 70%; */
-        margin-inline: auto;
+        width: inherit;
         padding: 0px;
         padding-bottom: 70px;
         background: none;
         height: max-content;
     }
 
-    /* .hero-left-side nav {} */
+    .hero-left-side nav {
+        display: flex;
+        flex-direction: column;
+    }
 
     .hero-content {
+        width: 310px;
         margin-top: 60px;
+        margin-inline: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -55,6 +59,7 @@
 
     .down-button {
         color: aliceblue;
+        width: 310px;
     }
 
     .hero-left-side .down-button {
@@ -63,28 +68,30 @@
     }
 
     .hero-head {
+        width: 310px;
         font-size: 12px;
         color: aliceblue;
     }
 
     .hero-text {
+        width: 310px;
         font-size: 36px;
         line-height: 40px;
         margin-bottom: 0px;
     }
 
     .hero-sub-text {
+        width: 310px;
         font-size: 14px;
         margin-bottom: 0px;
     }
 
-    .company {
-        /* padding-left: 40px;
-        padding-top: 40px; */
-    }
-
     .hero-left-side .company {
+        font-size: 48px;
         color: white;
+        display: block;
+        padding: 0;
+        padding-left: 32px;
     }
 
     .hero-text,
@@ -93,7 +100,21 @@
     }
 
     .hero-left-side ul {
-        display: none;
+        gap: 0px;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        /* gap: 10px; */
+        min-width: 100vw;
+        /* display: none; */
+    }
+    .hero-left-side ul li {
+        font-size: 24px;
+        background: var(--off-white);
+        color: var(--dark-color);
+        padding: 30px 0;
+        padding-left: 20px;
+        text-align: left;
     }
 
     .hero-right-side {
@@ -102,7 +123,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        height: 90vh;
+        /* height: 90vh; */
         width: 100%;
         background-size: auto;
         background-position: top center;
@@ -121,20 +142,33 @@
         gap: 20px;
     }
 
+    .second-left-side {
+        width: 310px;
+    }
     .second-left-side h1 {
+        width: 310px;
         font-size: 40px;
         font-weight: 300;
         line-height: 50px;
         margin-bottom: 30px;
     }
 
+    .second-left-side p {
+        width: 310px;
+    }
+
     .about-list .about p {
         font-size: 16px;
-        width: 300px;
+        width: 310px;
+    }
+
+    .about .about-head {
+        font-size: 24px;
+        width: 310px;
     }
 
     .second-right-side {
-        width: 300px;
+        width: 310px;
         display: flex;
         flex-direction: column;
     }
@@ -152,11 +186,6 @@
     .latest-trends p {
         width: 300px;
     }
-
-
-
-
-
 
     .carousel {
         position: relative;
@@ -190,7 +219,7 @@
     }
 
     .carousel img {
-        width: 300px;
+        width: 310px;
         height: 175px;
     }
 
@@ -233,12 +262,12 @@
         min-height: max-content;
         display: flex;
         height: max-content;
-        padding: 30px 0;
+        padding: 32px 0;
         justify-content: center;
     }
 
     .footer-navs {
-        width: 300px;
+        width: 310px;
         display: flex;
         flex-direction: column;
         gap: 30px;
@@ -251,17 +280,18 @@
     }
 
     .footer-section {
-        width: 300px;
+        width: 310px;
     }
 
     .footer-section img {
-        width: 300px;
+        width: 310px;
     }
 
     .footer-section p {
+        color: var(--dark-color);
         font-size: 20px;
         line-height: 36px;
-        width: 300px;
+        width: 310px;
     }
 
     .footer-section-head {
@@ -293,6 +323,7 @@
     }
 
     .footer-legals {
+        width: 310px;
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-between;
@@ -300,9 +331,11 @@
     }
 
     .footer-legals .legal-links ul {
+        width: 310px;
         display: flex;
         flex-direction: row;
         gap: 30px;
+        height: max-content;
     }
 
     /* FOOTER STOP */
