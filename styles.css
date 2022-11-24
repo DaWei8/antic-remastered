@@ -25,6 +25,10 @@ body {
     width: 100%;
 }
 
+.hamburger {
+    display: none;
+}
+
 .all-content {
     display: flex;
     flex-direction: column;
@@ -200,7 +204,7 @@ body {
     flex-direction: row;
 }
 
-.second-right-side .about-list {
+.about-list {
     padding-top: 20px;
     display: flex;
     flex-direction: row;
@@ -208,20 +212,20 @@ body {
     gap: 20px;
 }
 
-.about-list .about {
+.about {
     width: 250px;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.about-list .about-head {
+.about-head {
     font-size: 16px;
     font-weight: 600;
     color: var(--text-color);
 }
 
-.about-list .about p {
+.about p {
     font-size: 12px;
     line-height: 20px;
 }
@@ -245,7 +249,7 @@ body {
     align-items: center;
 }
 
-.latest-trends .left-side {
+.trends-left-side {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -257,17 +261,17 @@ body {
     font-weight: 300;
 }
 
-.latest-trends .left-side i {
+.trends-left-side i {
     font-size: 14px;
 }
 
-.latest-trends .right-side {
+.trends-right-side {
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
 
-.latest-trends .right-side input {
+.trends-right-side input {
     padding-left: 20px;
     width: 300px;
     height: 50px;
@@ -275,7 +279,7 @@ body {
     border: none;
 }
 
-.latest-trends .right-side button {
+.trends-right-side button {
     height: 50px;
     padding: 0 40px;
     background: var(--dark-color);

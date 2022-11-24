@@ -40,7 +40,7 @@
         right: 32px;
     }
 
-    .hamburger .bar1,
+    .bar1,
     .bar2 {
         width: 45px;
         height: 4px;
@@ -127,11 +127,11 @@
     }
 
     .hero-content {
-        width: 310px;
-        margin-top: 60px;
-        margin-inline: auto;
+        width: 100%;
+        margin-top: 0px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         gap: 20px;
         text-align: center;
@@ -189,14 +189,12 @@
         display: flex;
         flex-direction: column;
         width: 100vw;
-        /* height: 0px; */
         transition-duration: 1.5s;
-        transform: translateX(100%);
-        -webkit-transform: translateX(100%);
-        -moz-transform: translateX(100%);
-        -ms-transform: translateX(100%);
-        -o-transform: translateX(100%);
-        /* display: none; */
+        transform: translateX(100%) scale(0);
+        -webkit-transform: translateX(100%) scale(0);
+        -moz-transform: translateX(100%) scale(0);
+        -ms-transform: translateX(100%) scale(0);
+        -o-transform: translateX(100%) scale(0);
     }
 
     .show-nav {
@@ -212,7 +210,7 @@
         -moz-transform: translateX(0);
         -ms-transform: translateX(0);
         -o-transform: translateX(0);
-}
+    }
 
     .second-section {
         display: flex;
@@ -237,12 +235,19 @@
         width: 310px;
     }
 
-    .about-list .about p {
+    .about-list {
+        gap: 30px;
+    }
+    .about {
+        width: 310px;
+    }
+    .about p {
         font-size: 16px;
+        line-height: 28px;
         width: 310px;
     }
 
-    .about .about-head {
+    .about-head {
         font-size: 24px;
         width: 310px;
     }
@@ -255,9 +260,25 @@
 
 
     /* THIRD SECTION */
+    .third-section {
+        padding-bottom: 60px;
+    }
+    .latest-trends {
+        padding: 0px;
+        padding-top: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
+    .trends-left-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 310px;
+    }
 
-    .latest-trends .right-side {
+    .trends-right-side {
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -274,6 +295,7 @@
         display: flex;
         flex-direction: column;
         height: max-content;
+        align-items: center;
         gap: 20px;
         /* overflow-x: auto; */
     }
@@ -304,23 +326,26 @@
     }
 
     .inspiration {
+        padding: 0px;
         display: flex;
         flex-direction: column-reverse;
+        justify-content: center;
         gap: 20px;
     }
 
     .inspiration-bottom {
-        padding-right: 10vw;
+        padding: 0;
         margin-top: 20px;
         display: flex;
-        flex-direction: row;
-        align-items: baseline;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         gap: 20px;
     }
 
     .inspiration-bottom .insp-text-area {
         flex-direction: column;
+        width: 310px;
         gap: 30px;
         align-items: baseline;
     }
@@ -353,11 +378,14 @@
         gap: 30px;
     }
 
+    .footer-navs .company-name {
+        margin-bottom: 40px;
+    }
+
 
     .footer-sections {
         gap: 30px;
-        padding-left: 0;
-        padding-right: 0;
+        padding: 0;
     }
 
     .footer-section {
@@ -370,19 +398,20 @@
 
     .footer-section p {
         color: var(--dark-color);
-        font-size: 20px;
+        font-size: 16px;
         line-height: 36px;
         width: 310px;
     }
 
     .footer-section-head {
+        font-family: Merriweather;
         font-size: 24px;
         font-weight: 600;
         width: max-content;
     }
 
     .footer-section li {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .footer-socials {
