@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="./fontawesome/css/all.css">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./mobile.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
     <title>Antic Remastered</title>
-    
+
 </head>
 
 <body>
@@ -19,7 +21,7 @@
         <!-- FIRST SECTION -->
         <div class="hero-section">
             <div class="hero-left-side">
-                <div class="hamburger" onclick=activate() >
+                <div class="hamburger" onclick=activate()>
                     <div class="bar bar1"></div>
                     <div class="bar bar2"></div>
                 </div>
@@ -114,21 +116,21 @@
                     <button>Subscribe</button>
                 </div>
             </div>
-            <div class="inspiration">
-                <div class="carousel">
-                    <div class="carousel-image">
+            <div class="inspiration swiper">
+                <div class="carousel swiper-wrapper">
+                    <div class="carousel-image swiper-slide">
                         <img src="./images/slide1.png" alt="chair">
                         <p>Chair</p>
                     </div>
-                    <div class="carousel-image">
+                    <div class="carousel-image swiper-slide">
                         <img src="./images/slide2.png" alt="cooker">
                         <p>Cooked</p>
                     </div>
-                    <div class="carousel-image">
+                    <div class="carousel-image swiper-slide">
                         <img src="./images/slide1.png" alt="living">
                         <p>Living Room</p>
                     </div>
-                    <div class="carousel-image">
+                    <div class="carousel-image swiper-slide">
                         <img src="./images/slide2.png" alt="Tables">
                         <p>Table</p>
                     </div>
@@ -147,10 +149,10 @@
                     </div>
 
                     <div class="insp-navigation">
-                        <div class="move-left">
+                        <div class="move-left swiper-button-prev">
                             <i class="fa-solid fa-chevron-left"></i>
                         </div>
-                        <div class="move-right">
+                        <div class="move-right swiper-button-next">
                             <i class="fa-solid fa-chevron-right"></i>
                         </div>
                     </div>
@@ -250,6 +252,7 @@
 
 
     <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>
 
 </html>

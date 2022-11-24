@@ -297,7 +297,6 @@
         height: max-content;
         align-items: center;
         gap: 20px;
-        /* overflow-x: auto; */
     }
 
     .carousel-image {
