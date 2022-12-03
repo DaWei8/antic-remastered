@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./fontawesome/css/all.css">
+    <link rel="stylesheet" href="./swiper-bundle.min.css">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./mobile.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
     <title>Antic Remastered</title>
 
@@ -75,27 +75,28 @@
                 <p>Find out more <i class="fa-solid fa-chevron-right"></i></p>
             </div>
             <div class="second-right-side">
-                <div class="about-list">
-                    <div class="about">
-                        <div class="about-head">Our Advices</div>
-                        <p>What if you took advantage of this rather special period to rethink your interior? You spend
-                            more
-                            time at home so you might as well feel good there.</p>
-                    </div>
-                    <div class="about">
-                        <div class="about-head">Click and Collect</div>
-                        <p>Adapted and contactless. Free from € 200 of purchases in stores offering the service.</p>
-                    </div>
-                    <div class="about">
-                        <div class="about-head">Conception Service</div>
-                        <p>Personalized service with an expert advisor for your interior and exterior decoration or
-                            layout
-                            projects. </p>
-                    </div>
-                    <div class="about">
-                        <div class="about-head">Installation Service</div>
-                        <p>Our furniture packaged in flat packs are designed for easy assembly. But you can call on our
-                            partner.</p>
+                <div class="about-container">
+                    <div class="about-list">
+                        <div class="about">
+                            <div class="about-head">Our Advices</div>
+                            <p>What if you took advantage of this rather special period to rethink your interior? You
+                                spend more time at home so you might as well feel good there.</p>
+                        </div>
+                        <div class="about">
+                            <div class="about-head">Click and Collect</div>
+                            <p>Adapted and contactless. Free from € 200 of purchases in stores offering the service.</p>
+                        </div>
+                        <div class="about">
+                            <div class="about-head">Conception Service</div>
+                            <p>Personalized service with an expert advisor for your interior and exterior decoration or
+                                layout projects.
+                            </p>
+                        </div>
+                        <div class="about">
+                            <div class="about-head">Installation Service</div>
+                            <p>Our furniture packaged in flat packs are designed for easy assembly. But you can call on
+                                our partner.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -117,27 +118,31 @@
                 </div>
             </div>
             <div class="inspiration swiper">
-                <div class="carousel swiper-wrapper">
-                    <div class="carousel-image swiper-slide">
-                        <img src="./images/slide1.png" alt="chair">
-                        <p>Chair</p>
+                <div class="carousel-content">
+                    <div class="carousel swiper-wrapper">
+                        <div class="carousel-image swiper-slide">
+                            <img src="./images/slide1.png" alt="chair">
+                            <p>Chair</p>
+                        </div>
+                        <div class="carousel-image swiper-slide">
+                            <img src="./images/slide2.png" alt="cooker">
+                            <p>Kitchen</p>
+                        </div>
+                        <div class="carousel-image swiper-slide">
+                            <img src="./images/slide1.png" alt="living">
+                            <p>Living Room</p>
+                        </div>
+                        <div class="carousel-image swiper-slide">
+                            <img src="./images/slide2.png" alt="Tables">
+                            <p>Table</p>
+                        </div>
                     </div>
-                    <div class="carousel-image swiper-slide">
-                        <img src="./images/slide2.png" alt="cooker">
-                        <p>Cooked</p>
-                    </div>
-                    <div class="carousel-image swiper-slide">
-                        <img src="./images/slide1.png" alt="living">
-                        <p>Living Room</p>
-                    </div>
-                    <div class="carousel-image swiper-slide">
-                        <img src="./images/slide2.png" alt="Tables">
-                        <p>Table</p>
-                    </div>
-
-
-
+                    <div class="swiper-pagination"></div>
                 </div>
+                <!-- swiper navigation -->
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
+
                 <div class="inspiration-bottom">
                     <div class="insp-text-area">
                         <div class="insp-head">Inspirations</div>
@@ -149,12 +154,14 @@
                     </div>
 
                     <div class="insp-navigation">
-                        <div class="move-left swiper-button-prev">
+                        <div class="move-left">
                             <i class="fa-solid fa-chevron-left"></i>
                         </div>
-                        <div class="move-right swiper-button-next">
+                        <div class="move-right ">
                             <i class="fa-solid fa-chevron-right"></i>
                         </div>
+
+
                     </div>
                 </div>
             </div>
@@ -250,9 +257,13 @@
         </footer>
     </div>
 
+    <!-- Swiper JS -->
+
+    <script src="./swiper-bundle.min.js"></script>
+
 
     <script src="./main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
 </body>
 
 </html>
