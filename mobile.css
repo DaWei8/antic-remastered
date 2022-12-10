@@ -453,6 +453,7 @@
         justify-content: space-around;
         width: 30px;
         height: 30px;
+        padding: 5px;
         border: 3px solid var(--text-color);
         border-radius: 50%;
         -webkit-border-radius: 50%;
@@ -483,7 +484,7 @@
     }
 
     .footer-legals .legal-links li {
-        width: max-content;
+        width: fit-content;
     }
     .footer-legals .copyright {
         width: 100%;
